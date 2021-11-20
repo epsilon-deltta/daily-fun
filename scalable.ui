@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Sydney</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <property name="enabled">
@@ -31,18 +31,61 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <widget class="QPushButton" name="pushButton">
-      <property name="text">
-       <string>Kill</string>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>Kill</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>Find File</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string>custom dialog</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="text">
-       <string>Find File</string>
-      </property>
-     </widget>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string>default dialog(input dialog)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_5">
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_6">
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_7">
+        <property name="text">
+         <string>PushButton</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
     </item>
     <item>
      <widget class="QLabel" name="label">
@@ -65,8 +108,50 @@
      <height>26</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuLongHao">
+    <property name="title">
+     <string>LongHao</string>
+    </property>
+    <addaction name="actionHome"/>
+    <addaction name="actionLab"/>
+   </widget>
+   <widget class="QMenu" name="menuYP">
+    <property name="title">
+     <string>YP</string>
+    </property>
+    <addaction name="actionCafe"/>
+    <addaction name="actionLab_2"/>
+    <addaction name="actionHome_2"/>
+   </widget>
+   <addaction name="menuLongHao"/>
+   <addaction name="menuYP"/>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionHome">
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
+  <action name="actionLab">
+   <property name="text">
+    <string>Lab</string>
+   </property>
+  </action>
+  <action name="actionCafe">
+   <property name="text">
+    <string>Cafe</string>
+   </property>
+  </action>
+  <action name="actionLab_2">
+   <property name="text">
+    <string>Lab</string>
+   </property>
+  </action>
+  <action name="actionHome_2">
+   <property name="text">
+    <string>Home</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>
